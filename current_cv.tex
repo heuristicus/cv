@@ -26,7 +26,7 @@
 
 %FONTS
 \defaultfontfeatures{Mapping=tex-text}
-\setCJKmainfont{Meiryo}
+%\setCJKmainfont{Meiryo}
 \setmainfont[Numbers=Lining,Ligatures=Common]{Adobe Garamond Pro}
 \setmonofont{Inconsolata}
 
@@ -56,13 +56,13 @@
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
 % --------------------TITLE-------------
-\par{\centering {\Huge \ruby{Micha\l}{\begin{IPA}[mixaw]\end{IPA}} \ruby{Staniaszek}{\begin{IPA}[sta\:na\:sek]\end{IPA}} }\bigskip\par}
+\par{\centering {\Huge \ruby{Micha\l}{\begin{IPA}[mixaw]\end{IPA}} \ruby{\textsc{Staniaszek}}{\begin{IPA}[sta\:na\:sek]\end{IPA}} }\bigskip\par}
 
 % --------------------SECTIONS-----------------------------------
 % Section: Personal Data
 \section{Personal Data}
 
-\begin{tabular}{rl}
+\begin{tabular}{x{3.2cm}l}
   \textsc{Date of Birth:} & 7 December 1990, London, UK \\
   \textsc{Address:}   & 36 Selby Road, London, W5 1LX\\
   \textsc{Phone:}     & +44 759 4982724\\
@@ -90,7 +90,7 @@
   & (Student Autonomous Underwater Competition - Europe)\\
   &\footnotesize{Worked with a team of students from Southampton University and The University of Birmingham to program an AUV to perform specified tasks in a controlled competition environment.}\\\multicolumn{2}{c}{}\\
   \textsc{January}&Conversion of the \textbf{Delphin AUV} control system\\
-  to \textsc{July 2011}&\footnotesize{Assisted a PhD student in the conversion of the AUV control system from Matlab to a new \textsc{ROS} system in preparation for \textsc{SAUC-E 2011}.}\\\multicolumn{2}{c}{}\\
+  to \textsc{July 2011}&\footnotesize{Worked alongside a PhD student converting the AUV control system from Matlab to a new Python \textsc{ROS} system in preparation for \textsc{SAUC-E 2011}.}\\\multicolumn{2}{c}{}\\
   \textsc{October 2010}&Founding member of \textbf{Birmingham Autonomous Robotics Club}\\
   to \textsc{July 2011}&\footnotesize{Co-founded the club due to interest from faculty members and undergraduate students in working on programming tasks for intelligent robots. We worked on learning the \textsc{ROS} system in order to form a base of knowledge for future years.}\\\multicolumn{2}{c}{}
 \end{tabular}
@@ -123,24 +123,22 @@
 
 % Section: Languages
 \section{Languages}
-\begin{tabular}{rl}
-  Polish:&Fluent\\
+\begin{tabular}{x{3.2cm}l}
   English:&Native\\
-  Japanese:&Advanced Knowledge (JLPT N1: 163/180)\\
+  German:&Beginner\\
+  Japanese:&Advanced (JLPT N1: 163/180)\\
+  Polish:&Fluent\\
   %\textsc{French:}&Basic Knowledge\\
 \end{tabular}
 
-\section{Computer Skills}
-\begin{tabular}{rp{9cm}}
-  Basic Knowledge:& Common Lisp, C, C++, Haskell, \LaTeX, \XeTeX, SQL, Subversion, git, Linux\\
-  Intermediate Knowledge:& Python, Java, ROS (Robot Operating System)
+\section{Programming and Software}
+\begin{tabular}{x{3.2cm}p{9cm}}
+  Tinkering:& bash, C++, Common Lisp, Emacs Lisp, git, Haskell, \LaTeX, Linux, SQL, Subversion, \XeTeX\\
+  Confident:& C, Emacs, Java, Python, ROS (Robot Operating System)
 \end{tabular}
 
 \section{Interests and Activities}
-photography, cycling, japanese language and culture, languages,
-astrophysics, physics, human cognition, robotics, artificial
-intelligence, music, technology, programming, computers, open
-source, linux
+Artificial intelligence, astrophysics, computers, cycling, education, japanese language and culture, languages, linux, music, open source, photography, physics, programming, robotics, technology
 \section{References}
 Available upon request.
 
