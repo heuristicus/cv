@@ -22,14 +22,14 @@
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
 \usepackage{array}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\definecolor{linkcolour}{rgb}{0,0,0}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
 %FONTS
 \defaultfontfeatures{Mapping=tex-text}
 %\setCJKmainfont{Meiryo}
 \setmainfont[Numbers=Lining,Ligatures=Common]{Adobe Garamond Pro}
-\setmonofont{Inconsolata}
+\setmonofont{Adobe Garamond Pro}
 \linespread{1.2}
 \headheight -0.5in
 \textheight 10.3in
@@ -59,14 +59,11 @@
 \pagestyle{empty}
 %\par{\centering {\Huge \ruby{Micha\l}{\begin{IPA}[mixaw]\end{IPA}} \ruby{\textsc{Staniaszek}}{\begin{IPA}[sta\:na\:sek]\end{IPA}} }\bigskip\par}
 \par{\centering {\Huge Michal Staniaszek}\par}
+\vskip 0.3cm
+\begin{center}
+\url{www.michalstaniaszek.com}\hskip 1.5cm \href{mailto:contact@michalstaniaszek.com}{contact@michalstaniaszek.com}
+\end{center}
 
-\section{Personal Data}
-
-\begin{tabular}{x{2.8cm}l}
-  \textsc{Date of Birth:} & 7 December 1990\\
-  \textsc{e-mail:}     & \href{mailto:contact@michalstaniaszek.com}{contact@michalstaniaszek.com}\\
-  \textsc{web:}       & \url{www.michalstaniaszek.com}
-\end{tabular}
 
 \section{Education and Qualifications} 
 \begin{tabular}{x{2.8cm}|p{12cm}}
@@ -96,55 +93,64 @@
 
 \section{Teaching}
 \begin{tabular}{x{2.8cm}|p{12cm}}
-  \textsc{January 2013} to& \textbf{Robot Programming Demonstrator} at \\
-  \textsc{April 2013}&\textsc{Department of Computer Science}, University of Birmingham\\
-  &\footnotesize{Answered questions about the implementation of various algorithms and the application of robotics techniques for use on LEGO NXT robots running LeJOS.}\\\multicolumn{2}{c}{}\\[-0.2cm]
-  \textsc{September 2012} to& \textbf{Foundation Year Computer Science Demonstrator} at \\
-  \textsc{December 2012}&\textsc{Department of Computer Science}, University of Birmingham\\
-  &\footnotesize{Helped foundation year students understand basic programming concepts, and evaluated their performance in assignments.}\\\multicolumn{2}{c}{}\\[-0.2cm]
-  \textsc{September 2010} to& \textbf{Software Workshop (Java) Demonstrator} at \\
-  \textsc{April 2011}&\textsc{Department of Computer Science}, University of Birmingham\\
-  &\footnotesize{One of five second year students selected to demonstrate for the First Year Workshop Java module. Provided advice on assignments, programming concepts, and the Java API.}\\
-\end{tabular}
-
-\section{Bursaries, Scholarships and Awards}
-\begin{tabular}{x{2.8cm}|p{12cm}}
-  \multirow{2}{*}{\textsc{June 2013}} & \textbf{Best Research Project}\\
-  & \footnotesize{Awarded for my dissertation project by the University of Birmingham Computer Science department.}\\\multicolumn{2}{c}{} \\[-0.2cm]
-  \textsc{January} to& \textbf{Japan Student Services Organisation Scholarship}\\
-  \textsc{April 2012}&\footnotesize{Short-term scholarship to support study in Japan.}\\\multicolumn{2}{c}{} \\[-0.2cm]
-  \textsc{July} to& \textbf{Nuffield Undergraduate Research Bursary}\\
-  \textsc{September 2011}&\footnotesize{Bursary to support the development of a particle filter based localisation algorithm for an AUV.}
+  \textsc{January 2013} to& \textbf{Robot Programming Demonstrator} at \textsc{University of Birmingham}\\
+  \textsc{April 2013}&\footnotesize{Answered questions about the implementation of various algorithms and the application of robotics techniques for use on LEGO NXT robots running LeJOS.}\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{September 2012} to& \textbf{Foundation Year Computer Science Demonstrator} at \textsc{University of Birmingham}\\
+  \textsc{December 2012}&\footnotesize{Helped foundation year students understand basic programming concepts, and evaluated their performance in assignments.}\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{September 2010} to& \textbf{Software Workshop (Java) Demonstrator} at \textsc{University of Birmingham}\\
+  \textsc{April 2011}&\footnotesize{One of five second year students selected to demonstrate for the First Year Workshop Java module. Provided advice on assignments, programming concepts, and the Java API.}\\
 \end{tabular}
 
 \section{Work Experience}
 \begin{tabular}{x{2.8cm}|p{12cm}}
+  \multirow{2}{*}{\textsc{July 2013}} & \textbf{Systems and Software Assistant} at \textsc{Kaon Ltd.}, Guildford, UK\\
+  &\footnotesize{Developed a GUI prototype for a portable device in Java, to demonstrate functionality to the customer. Set up and tested filesystems on linux for optimal operation on a large RAID device.}\\\multicolumn{2}{c}{} \\[-0.2cm]
   \textsc{December 2011} to& \textbf{Waiter} at \textsc{Gyu-Kaku}, Tokyo, Japan\\
   \textsc{June 2012}
-  &\footnotesize{Serving food and taking orders, working entirely in Japanese with Japanese co-workers and clients.}\\\multicolumn{2}{c}{} \\[-0.2cm]
-  \textsc{July} to& \textbf{Technical Assistant} at \textsc{Japan Services} Estate Agents, London, UK\\
+  &\footnotesize{Served food and took orders, working entirely in Japanese with Japanese co-workers and clientele.}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \textsc{July} to& \textbf{Technical Assistant} at \textsc{Japan Services Ltd.}, London, UK\\
   \textsc{September 2010}&\footnotesize{Assisted the company director with the development of a website. Used image manipulation tools to create images for the site. Solved hardware and software problems encountered by co-workers.}\\
 \end{tabular}
 
+\section{Bursaries, Scholarships and Awards}
+\begin{tabular}{x{2.8cm}|p{12cm}}
+    \multirow{2}{*}{\textsc{July 2013}} & \textbf{Computer Science Prize (School Prize)}\\
+  & \footnotesize{Awarded to the highest scoring of all final year students in the School of Computer Science}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \multirow{2}{*}{\textsc{July 2013}} & \textbf{Research Committee Project Prize}\\
+  & \footnotesize{Awarded for the best research related dissertation by the University of Birmingham School of Computer Science}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \textsc{January} to& \textbf{Japan Student Services Organisation Scholarship}\\
+  \textsc{April 2012}&\footnotesize{Short-term scholarship to support study in Japan.}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \textsc{July} to& \textbf{Nuffield Undergraduate Research Bursary}\\
+  \textsc{September 2011}&\footnotesize{Bursary to support a summer research project to investigate particle filter localisation for AUVs.}
+\end{tabular}
+
 \section{Interests and Activities}
-Artificial intelligence, cycling, history of science, Japanese language and culture, languages, linux, music, photography, physics, science education.
+Artificial intelligence, cycling, history of science, Japanese language and culture, languages, linux, music, photography, science education.
+
+\section{Availability}
+I am looking for internship opportunities in software development or research,
+particularly in the areas of artificial intelligence, machine learning and
+robotics, and am available from \textbf{early June 2014 until mid-late August 2014}.
 
 \begin{minipage}[t]{0.48\textwidth}
   \section{Programming and Software}
   \begin{tabular}{rp{0.7\textwidth}}
-    Basic:& Bash, CUDA, Subversion\\
+    Basic:& Bash, CUDA, Subversion, Lisp\\
     Intermediate:& C++, Emacs, Linux, ROS, Git, \LaTeX, Python\\
     Advanced:& C, Java
   \end{tabular}
+  \vskip 0.2cm
+  \centering
+  Public repositories at \href{http://www.github.com/heuristicus}{github.com/heuristicus}
 \end{minipage}
 \hskip 0.04\textwidth
 \begin{minipage}[t]{0.48\textwidth}
   \section{Languages}
-  \begin{tabular}{rlrl}
-    English:&Native&\hskip 1cm Swedish:&Basic\\
+  \begin{tabular}{rlr}%l}
+    English:&Native\\%&\hskip 1cm Swedish:&Basic\\
     Japanese:&Fluent\\
     Polish:&Fluent\\
-    German:&Basic\\
+    %German:&Basic\\
 
     % \textsc{French:}&Basic Knowledge\\
   \end{tabular}
@@ -152,13 +158,13 @@ Artificial intelligence, cycling, history of science, Japanese language and cult
 
 \section{Referees}
 \begin{center}
-  \begin{tabular}{l|l}
-  Prof. Jeremy Wyatt$^1$ & Dr. Peter Ti{\v{n}}o$^1$\\ % HACKING!
-  \textsc{email}: j.l.wyatt@cs.bham.ac.uk&\textsc{email}: p.tino@cs.bham.ac.uk\\
-  \textsc{tel}: +44 (0)121 414 4788&\textsc{tel}: +44 (0)121 414 8558\\
-  \textsc{fax} +44 (0)121 414 4281&\textsc{fax} +44 (0)121 414 4281\\
+  \begin{tabular}{l|l|l}
+  Prof. Jeremy Wyatt$^1$ & Dr. Peter Ti{\v{n}}o$^1$ & Kieren Feakes$^2$\\ % HACKING!
+  \textsc{email}: j.l.wyatt@cs.bham.ac.uk&\textsc{email}: p.tino@cs.bham.ac.uk & \textsc{email}: klf@kaon.co.uk\\
+  \textsc{tel}: +44 (0)121 414 4788&\textsc{tel}: +44 (0)121 414 8558 & \textsc{tel}: +44 (0)148 388 5300\\
 \end{tabular}\\\vspace{0.2cm}
 \footnotesize{$^1$School of Computer Science, University of Birmingham, Edgbaston, Birmingham, B15 2TT, UK}\\
+\footnotesize{$^2$Kaon Limited, 5 Wey Court, Mary Road, Guildford, Surrey, GU1 4QU, UK}\\
 \end{center}
 
 \begin{comment}
