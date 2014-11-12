@@ -1,0 +1,12 @@
+*.aux
+*.out
+*.log
+*~
+.#*
+\#*
+_*
+*.dvi
+*.log
+*.loc
+*.lol
+*.lob

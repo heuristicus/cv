@@ -1,0 +1,148 @@
+Michal Staniaszek
+center
+www.michalstaniaszek.commailto:contact@michalstaniaszek.comcontact@michalstaniaszek.com
+center
+
+
+Education
+August 2013 to June 2015: MSc Systems, Control and Robotics, Robotics and Autonomous Systems track
+  June 2015& KTH Royal Institute of Technology, Stockholm, Sweden
+2c
+
+  September 2009 to& BSc Computer Science with Study Abroad, First Class Honours
+
+  June 2013&Top of graduating class (final year: 92, weighted average: 89)
+
+  &University of Birmingham, Birmingham, UK
+2c
+
+  September 2011 to& Japanese Language Programme
+ 
+  July 2012&Japanese Language Proficiency Test level N1 (90)
+
+  &Keio University, Tokyo, Japan
+2c
+
+  
+  
+  
+  
+tabular
+
+Academic and Research Activity
+tabularx2.8cmp12cm
+  September 2012 to& Final Year Project --- Time Delay Estimation in Gravitationally Lensed Photon Streams
+
+  April 2013&Developed a system to estimate characteristic functions of streams with weighted least squares techniques and compare them with probabilistic techniques to estimate the time delay. Supervised by Peter Tiňo.
+2c
+
+  January to&Participant at SAUC-E 2011 (Student Autonomous Underwater Competition - Europe)
+
+  July 2011&Collaboration between the University of Birmingham and University of Southampton to prepare the Delphin AUV for the competition in July. Converted the control system from Matlab to ROS Python.
+2c
+
+  October 2010 to&Founding member of Birmingham Autonomous Robotics Club
+
+  July 2013&Co-founded the club due to interest from computer science faculty and undergraduate students in solving robotics problems and increasing the profile of the field in the school.
+
+tabular
+
+Teaching
+tabularx2.8cmp12cm
+  January 2013 to& Robot Programming Demonstrator at University of Birmingham
+
+  April 2013&Answered questions about the implementation
+    of various algorithms and the application of artificial intelligence techniques for use on LEGO NXT robots running LeJOS.
+2c
+
+  September 2012 to& Foundation Year Computer Science Demonstrator at University of Birmingham
+
+  December 2012&Helped foundation year students understand basic programming concepts, and evaluated their performance in assignments.
+2c
+
+  September 2010 to& Software Workshop (Java) Demonstrator at University of Birmingham
+
+  April 2011&One of five second year students selected to demonstrate for the First Year Workshop Java module. Provided advice on assignments, programming concepts, and the Java API.
+
+tabular
+
+Work Experience
+tabularx2.8cmp12cm
+  2*July 2013 & Systems and Software Assistant at Kaon Ltd., Guildford, UK
+
+  &Developed a GUI prototype for a portable device in Java, to demonstrate functionality to the customer. Set up and tested filesystems on linux for optimal operation on a large RAID device.
+2c 
+
+  December 2011 to& Waiter at Gyu-Kaku, Shibaura, Tokyo, Japan
+
+  June 2012
+  &Served food and took orders, working entirely in Japanese with Japanese co-workers and clientele.
+2c 
+
+  July to& Technical Assistant at Japan Services Ltd., London, UK
+
+  September 2010&Assisted the company director with the development of a website. Used image manipulation tools to create images for the site. Solved hardware and software problems encountered by co-workers.
+
+tabular
+
+Bursaries, Scholarships and Awards
+tabularx2.8cmp12cm
+    2*July 2013 & Computer Science Prize (School Prize)
+
+  & Awarded to the highest scoring of all final year students in the School of Computer Science
+2c 
+
+  2*July 2013 & Research Committee Project Prize
+
+  & Awarded for the best research related dissertation by the University of Birmingham School of Computer Science
+2c 
+
+  January to& Japan Student Services Organisation Scholarship
+
+  April 2012&Short-term scholarship to support study in Japan.
+2c 
+
+  July to& Nuffield Undergraduate Research Bursary
+
+  September 2011&Bursary to support a summer research project to investigate particle filter localisation for AUVs.
+tabular
+
+minipage[t]0.47
+  Programming and Software
+  tabularrp0.7
+    Basic:& Bash, Subversion, Lisp, C, Python, Matlab
+
+    Intermediate:& Emacs, Linux, ROS, PCL, OpenCV, Git, 
+
+    Advanced:& C/C++, Java
+  tabular
+  
+  Public repositories at http://www.github.com/heuristicusgithub.com/heuristicus
+minipage
+0.04
+minipage[t]0.47
+  Languages
+  tabularrlr
+    English:&Native
+
+    Japanese:&Fluent
+
+    Polish:&Fluent
+
+
+Referees
+center
+  tabularlll
+  Prof. Jeremy Wyatt & Dr. Peter Tino & Kieren Feakes
+ 
+  email: j.l.wyatt@cs.bham.ac.uk&email: p.tino@cs.bham.ac.uk & email: klf@kaon.co.uk
+
+  tel: +44 (0)121 414 4788&tel: +44 (0)121 414 8558 & tel: +44 (0)148 388 5300
+
+tabular
+
+School of Computer Science, University of Birmingham, Edgbaston, Birmingham, B15 2TT, UK
+
+Kaon Limited, 5 Wey Court, Mary Road, Guildford, Surrey, GU1 4QU, UK
+
+center
