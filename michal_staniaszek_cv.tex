@@ -5,20 +5,16 @@
 %A Few Useful Packages
 %\usepackage{marvosym}
 \usepackage{fontspec} 					%for loading fonts
-\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
-\usepackage{amsfonts}
+%\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+%\usepackage{amsfonts}
 \usepackage{multirow}
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{moreverb}
-\usepackage[boldfont]{xeCJK}
-\usepackage{ruby}
-%\usepackage{tipa}
-%\usepackage[big]{layaureo} 				%better formatting of the A4 page
 % an alternative to Layaureo can be ** \usepackage{fullpage} **
-\usepackage{supertabular} 				%for Grades
+%\usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
-\usepackage{fullpage}
+\usepackage[left=2cm, right=2cm,bottom=2cm]{geometry}
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
 \usepackage{array}
@@ -69,13 +65,12 @@
 \begin{tabular}{x{2.8cm}|p{12cm}}
   \textsc{August 2013} to& \textbf{MSc Systems, Control and Robotics}, Robotics
     and Autonomous Systems track\\
-  \textsc{June 2015}& \textsc{KTH Royal Institute of Technology}, Stockholm, Sweden\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{Present}& \textsc{KTH Royal Institute of Technology}, Stockholm, Sweden\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{September 2009} to& \textbf{BSc Computer Science with Study Abroad}, First Class Honours\\
   \textsc{June 2013}&Top of graduating class (final year: 92\%, weighted average: 89\%)\\
   &\textsc{University of Birmingham}, Birmingham, UK\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{September 2011} to& \textbf{Japanese Language Programme}\\ 
-  \textsc{July 2012}&\textbf{Japanese Language Proficiency Test} level N1 (90\%)\\
-  &\textsc{Keio University}, Tokyo, Japan\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{July 2012}&\textsc{Keio University}, Tokyo, Japan\\\multicolumn{2}{c}{}\\[-0.2cm]
   %\textsc{September 2007} to& A-level \textbf{Mathematics, Physics, Computing and Polish}\\ 
   %\textsc{July 2009}& \textsc{St. Dominic's Sixth Form College}, London, UK\\
   %\textsc{July} 2007& \textbf{Cardinal Wiseman Roman Catholic High School}\\
@@ -84,7 +79,9 @@
 
 \section{Academic and Research Activity}
 \begin{tabular}{x{2.8cm}|p{12cm}}
-  \textsc{September 2012} to& Final Year Project --- \textbf{Time Delay Estimation in Gravitationally Lensed Photon Streams}\\
+  \textsc{January 2015} to& Master's Thesis --- \textbf{Object Search in Point Clouds}\\
+  \textsc{Present}&\footnotesize{Developing a system to describe objects in a registered point cloud using 3D feature descriptors, and find query objects in the resulting feature database. Supervised by John Folkesson.}\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{September 2012} to& Bachelor's Thesis --- \textbf{Time Delay Estimation in Gravitationally Lensed Photon Streams}\\
   \textsc{April 2013}&\footnotesize{Developed a system to estimate characteristic functions of streams with weighted least squares techniques and compare them with probabilistic techniques to estimate the time delay. Supervised by Peter Tiňo.}\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{January} to&Participant at \textbf{SAUC-E 2011} (Student Autonomous Underwater Competition - Europe)\\
   \textsc{July 2011}&\footnotesize{Collaboration between the University of Birmingham and University of Southampton to prepare the Delphin AUV for the competition in July. Converted the control system from Matlab to ROS Python.}\\\multicolumn{2}{c}{}\\[-0.2cm]
@@ -132,8 +129,8 @@
 \begin{minipage}[t]{0.47\textwidth}
   \section{Programming and Software}
   \begin{tabular}{rp{0.7\textwidth}}
-    Basic:& Bash, Subversion, Lisp, C\#, Python, Matlab, OpenCV, PCL\\
-    Intermediate:& Emacs, Linux, ROS,\LaTeX, C\\
+    Basic:& Bash, Subversion, Python, Matlab, OpenCV, PCL\\
+    Intermediate:& Emacs, Linux, ROS, \LaTeX, C\\
     Advanced:& C++, Java, Git
   \end{tabular}
   \vskip 0.2cm
@@ -145,9 +142,9 @@
   \section{Languages}
   \begin{tabular}{rlr}%l}
     English:&Native\\%&\hskip 1cm Swedish:&Basic\\
-    Japanese:&Fluent\\
+    Japanese:&Fluent (2012 JLPT N1, 90\%)\\
     Polish:&Fluent\\
-    %German:&Basic\\
+    Swedish:&Basic\\
 
     % \textsc{French:}&Basic Knowledge\\
   \end{tabular}
