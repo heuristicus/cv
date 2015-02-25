@@ -5,8 +5,6 @@
 %A Few Useful Packages
 %\usepackage{marvosym}
 \usepackage{fontspec} 					%for loading fonts
-%\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
-%\usepackage{amsfonts}
 \usepackage{multirow}
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
@@ -14,10 +12,13 @@
 % an alternative to Layaureo can be ** \usepackage{fullpage} **
 %\usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
-\usepackage[left=2cm, right=2cm,bottom=2cm]{geometry}
+\usepackage[left=2cm, right=2cm,bottom=3cm,top=2cm]{geometry}
+\setlength{\parskip}{0.5cm plus4mm minus3mm}
+%\setlength{\parskip}{0.2cm}
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
 \usepackage{array}
+\usepackage[super]{nth} % 7th in superscript
 \definecolor{linkcolour}{rgb}{0,0,0}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
@@ -27,8 +28,6 @@
 \setmainfont[Numbers=Lining,Ligatures=Common]{Adobe Garamond Pro}
 \setmonofont{Adobe Garamond Pro}
 \linespread{1.2}
-\headheight -0.5in
-\textheight 10.3in
 \newcolumntype{x}[1]{%
 >{\raggedleft\hspace{0pt}}p{#1}}%
 
@@ -36,12 +35,6 @@
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
-\titleformat{\subsection}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\subsection}{0pt}{3pt}{3pt}
-\titleformat{\subsubsection}{\centering\large\scshape}{}{0em}{}
-\titlespacing{\subsection}{0pt}{3pt}{3pt}
-%Tweak a bit the top margin
-%\addtolength{\voffset}{-1.3cm}
 
 \usepackage[absolute]{textpos}
 
@@ -54,23 +47,26 @@
 \thispagestyle{empty}
 \pagestyle{empty}
 %\par{\centering {\Huge \ruby{Micha\l}{\begin{IPA}[mixaw]\end{IPA}} \ruby{\textsc{Staniaszek}}{\begin{IPA}[sta\:na\:sek]\end{IPA}} }\bigskip\par}
-\begin{center}\Huge Michal Staniaszek\end{center}
-\vskip 0.3cm
-\begin{center}
-\url{www.michalstaniaszek.com}\hskip 1.5cm \href{mailto:contact@michalstaniaszek.com}{contact@michalstaniaszek.com}
+\begin{center}\Huge Michal Staniaszek\\
+  \normalsize \vskip 0.3cm
+  \begin{tabular}{rl}
+  Born \nth{7} December 1990 & British national\\
+\url{www.michalstaniaszek.com} & \href{mailto:contact@michalstaniaszek.com}{m.staniaszek@gmail.com}
+  \end{tabular}
 \end{center}
 
-
-\section{Education} 
+%\vspace*{-0.3cm}
+\section{Education and Qualifications} 
 \begin{tabular}{x{2.8cm}|p{12cm}}
   \textsc{August 2013} to& \textbf{MSc Systems, Control and Robotics}, Robotics
     and Autonomous Systems track\\
-  \textsc{Present}& \textsc{KTH Royal Institute of Technology}, Stockholm, Sweden\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{Summer 2015}& \textsc{KTH Royal Institute of Technology}, Stockholm, Sweden\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{September 2009} to& \textbf{BSc Computer Science with Study Abroad}, First Class Honours\\
   \textsc{June 2013}&Top of graduating class (final year: 92\%, weighted average: 89\%)\\
   &\textsc{University of Birmingham}, Birmingham, UK\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{September 2011} to& \textbf{Japanese Language Programme}, Advanced Level\\ 
-  \textsc{July 2012}&\textsc{Keio University}, Tokyo, Japan\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{July 2012}& Japanese Language Proficiency Test level N1 (90\%)\\
+  &\textsc{Keio University}, Tokyo, Japan
   %\textsc{September 2007} to& A-level \textbf{Mathematics, Physics, Computing and Polish}\\ 
   %\textsc{July 2009}& \textsc{St. Dominic's Sixth Form College}, London, UK\\
   %\textsc{July} 2007& \textbf{Cardinal Wiseman Roman Catholic High School}\\
@@ -80,10 +76,12 @@
 \section{Academic and Research Activity}
 \begin{tabular}{x{2.8cm}|p{12cm}}
   \textsc{January 2015} to& Master's Thesis --- \textbf{Object Search in Point Clouds}\\
-  \textsc{Present}&\footnotesize{Developing a system to describe objects in a registered point cloud using 3D feature descriptors, and find query objects in the resulting feature database. Supervised by John Folkesson.}\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{Summer 2015}&\footnotesize{Developing a system to describe objects in a registered point cloud using 3D feature descriptors, and find query objects in the resulting feature database. Supervised by John Folkesson.}\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{July} to& Participant in \textbf{Tohoku University Engineering Summer Programme (TESP)}\\
+  \textsc{August 2014}&\footnotesize{Attended lectures on several different areas related to robotics, worked on a short project on obstacle avoidance for a tracked mobile robot.}\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{September 2012} to& Bachelor's Thesis --- \textbf{Time Delay Estimation in Gravitationally Lensed Photon Streams}\\
   \textsc{April 2013}&\footnotesize{Developed a system to estimate characteristic functions of streams with weighted least squares techniques and compare them with probabilistic techniques to estimate the time delay. Supervised by Peter Tiňo.}\\\multicolumn{2}{c}{}\\[-0.2cm]
-  \textsc{January} to&Participant at \textbf{SAUC-E 2011} (Student Autonomous Underwater Competition - Europe)\\
+  \textsc{January} to&Participant at \textbf{Student Autonomous Underwater Competition - Europe (SAUC-E)} \\
   \textsc{July 2011}&\footnotesize{Collaboration between the University of Birmingham and University of Southampton to prepare the Delphin AUV for the competition in July. Converted the control system from Matlab to ROS Python.}\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{October 2010} to&Founding member of \textbf{Birmingham Autonomous Robotics Club}\\
   \textsc{July 2013}&\footnotesize{Co-founded the club due to interest from computer science faculty and undergraduate students in solving robotics problems and increasing the profile of the field in the school.}\\
@@ -102,19 +100,19 @@
 
 \section{Work Experience}
 \begin{tabular}{x{2.8cm}|p{12cm}}
-  \multirow{2}{*}{\textsc{July 2013}} & \textbf{Systems and Software Assistant} at \textsc{Kaon Limited}, Guildford, UK\\
+  \multirow{2}{*}{\textsc{July 2013}} & \textbf{Systems and Software Assistant} at \textsc{Kaon Ltd}, Guildford, UK\\
   &\footnotesize{Developed a GUI prototype for a portable device in Java, to demonstrate functionality to the customer. Set up and tested filesystems on linux for optimal operation on a large RAID device.}\\\multicolumn{2}{c}{} \\[-0.2cm]
   \textsc{December 2011} to& \textbf{Waiter} at \textsc{Gyu-Kaku}, Shibaura, Tokyo, Japan\\
   \textsc{June 2012}
   &\footnotesize{Served food and took orders, working entirely in Japanese with Japanese co-workers and clientele.}\\\multicolumn{2}{c}{} \\[-0.2cm]
-  \textsc{July} to& \textbf{Technical Assistant} at \textsc{Japan Services Ltd.}, London, UK\\
+  \textsc{July} to& \textbf{Technical Assistant} at \textsc{Japan Services Rent Ltd}, London, UK\\
   \textsc{September 2010}&\footnotesize{Assisted the company director with the development of a website. Used image manipulation tools to create images for the site. Solved hardware and software problems encountered by co-workers.}\\
 \end{tabular}
 
 \section{Bursaries, Scholarships and Awards}
 \begin{tabular}{x{2.8cm}|p{12cm}}
-    \multirow{2}{*}{\textsc{July 2013}} & \textbf{Computer Science Prize (School Prize)}\\
-  & \footnotesize{Awarded to the highest scoring of all final year students in the School of Computer Science}\\\multicolumn{2}{c}{} \\[-0.2cm]
+    \multirow{2}{*}{\textsc{July 2013}} & \textbf{Computer Science Prize}\\
+  & \footnotesize{Awarded to the highest scoring final year student in the University of Birmingham School of Computer Science}\\\multicolumn{2}{c}{} \\[-0.2cm]
   \multirow{2}{*}{\textsc{July 2013}} & \textbf{Research Committee Project Prize}\\
   & \footnotesize{Awarded for the best research related dissertation by the University of Birmingham School of Computer Science}\\\multicolumn{2}{c}{} \\[-0.2cm]
   \textsc{January} to& \textbf{Japan Student Services Organisation Scholarship}\\
@@ -122,9 +120,6 @@
   \textsc{July} to& \textbf{Nuffield Undergraduate Research Bursary}\\
   \textsc{September 2011}&\footnotesize{Bursary to support a summer research project to investigate particle filter localisation for AUVs.}
 \end{tabular}
-
-% \section{Interests and Activities}
-% Artificial intelligence, cycling, history of science, Japanese language and culture, languages, linux, music, photography, science education.
 
 \begin{minipage}[t]{0.47\textwidth}
   \section{Programming and Software}
@@ -141,28 +136,27 @@
 \begin{minipage}[t]{0.47\textwidth}
   \section{Languages}
   \begin{tabular}{rlr}%l}
-    English:&Native\\%&\hskip 1cm Swedish:&Basic\\
-    Japanese:&Fluent (2012 JLPT N1, 90\%)\\
+    English:&Native\\
+    Japanese:&Fluent\\
     Polish:&Fluent\\
     Swedish:&Basic\\
-
-    % \textsc{French:}&Basic Knowledge\\
   \end{tabular}
 \end{minipage}
 
+\section{Interests}
+Cycling, Japanese language and culture, languages, music, photography, reading
+
 \section{Referees}
 \begin{center}
-  \begin{tabular}{c|c|c}
-  Peter Ti{\v{n}}o$^1$& Patric Jensfelt$^2$ & Kieren Feakes$^3$ \\ % HACKING!
+  \begin{tabular}{lll}
+  Peter Ti{\v{n}}o& Patric Jensfelt & Kieren Feakes \\
   Professor  & Professor & Managing Director\\
-  p.tino@cs.bham.ac.uk & patric@kth.se & klf@kaon.co.uk \\
-%  \textsc{tel}: +44 (0)121 414 4788&\textsc{tel}: +44 (0)121 414 8558 & \textsc{tel}: +44 (0)148 388 5300\\
-\end{tabular}\\\vspace{0.2cm}
-\footnotesize{$^1$School of Computer Science, University of Birmingham, Edgbaston, Birmingham, B15 2TT, UK}\\
-\footnotesize{$^3$Centre for Autonomous Systems, Kungliga Tekniska Högskolan,
-  SE-100 44,Stockholm, SWEDEN}\\
-\footnotesize{$^2$Kaon Limited, 5 Wey Court, Mary Road, Guildford, Surrey, GU1
-  4QU, UK}\\
+  p.tino@cs.bham.ac.uk & patric@kth.se & klf@kaon.co.uk\\
+  School of Computer Science& Centre for Autonomous Systems & Kaon Ltd  \rule{0pt}{0.6cm} \\
+  University of Birmingham& Kungliga Tekniska H\"{o}gskolan & 5 Wey Court, Mary Road  \\
+  Edgbaston, Birmingham & 100 44 & Guildford, Surrey \\
+  B15 2TT, UK& Stockholm, Sweden &  GU1 4QU, UK
+\end{tabular}
 \end{center}
 
 
