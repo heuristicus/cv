@@ -1,6 +1,6 @@
 Michal Staniaszek
 
-Education
+Education and Qualifications
 ----------------------------------------
 August 2013 to June 2015: 
   MSc Systems, Control and Robotics, Robotics and Autonomous Systems track
@@ -12,20 +12,34 @@ September 2009 to June 2013:
   University of Birmingham, Birmingham, UK
 
 September 2011 to July 2012:
-  Japanese Language Programme, Keio University, Tokyo, Japan
+  Japanese Language Programme (Advanced level), Keio University, Tokyo, Japan
+  Japanese Language Proficiency Test level N1 (90%)
 
 
 Academic and Research Activity
 ----------------------------------------
+January to Summer 2015:
+  Master's Thesis - Object Search in Point Clouds
+    
+     Developing a system to describe objects in a registered point cloud using
+     3D feature descriptors, and find query objects in the resulting feature
+     database. Supervised by John Folkesson.
+
+July to August 2014:
+  Participant in Tohoku University Engineering Summer Programme (TESP)
+   
+     Attended lectures on several different areas related to robotics, worked on
+     a short project on obstacle avoidance for a tracked mobile robot.
+
 September 2012 to April 2013:
-  Final Year Project - Time Delay Estimation in Gravitationally Lensed Photon Streams
+  Bachelor's Thesis - Time Delay Estimation in Gravitationally Lensed Photon Streams
 
      Developed a system to estimate characteristic functions of streams with
      weighted least squares techniques and compare them with probabilistic techniques
      to estimate the time delay. Supervised by Peter Tino.
 
 January to July 2011:
-  Participant at SAUC-E 2011 (Student Autonomous Underwater Competition - Europe)
+  Participant at Student Autonomous Underwater Competition - Europe (SAUC-E)
 
     Collaboration between the University of Birmingham and University of
     Southampton to prepare the Delphin AUV for the competition in July.
@@ -64,7 +78,7 @@ September 2010 to April 2011:
 Work Experience
 ----------------------------------------
 July 2013:
-  Systems and Software Assistant at Kaon Ltd., Guildford, UK
+  Systems and Software Assistant at Kaon Ltd, Guildford, UK
 
     Developed a GUI prototype for a portable device in Java, to demonstrate
     functionality to the customer. Set up and tested filesystems on linux for
@@ -78,7 +92,7 @@ December 2011 to June 2012:
     co-workers and clientele.
 
 July to September 2010:
-  Technical Assistant at Japan Services Ltd., London, UK
+  Technical Assistant at Japan Services Ltd, London, UK
 
     Assisted the company director with the development of a website. Used image
     manipulation tools to create images for the site. Solved hardware and software
@@ -87,10 +101,10 @@ July to September 2010:
 Bursaries, Scholarships and Awards
 ----------------------------------------
 July 2013:
-  Computer Science Prize (School Prize)
+  Computer Science Prize
     
-   Awarded to the highest scoring of all final year students in the School of
-   Computer Science
+   Awarded to the highest scoring of all final year students in the University
+   of Birmingham School of Computer Science
 
 July 2013:
   Research Committee Project Prize
@@ -106,7 +120,7 @@ July to September 2011:
 
 Programming and Software
 ----------------------------------------
-Basic: Bash, Subversion, Lisp, C#, Python, Matlab, PCL, OpenCV
+Basic: Bash, Subversion, Python, Matlab, PCL, OpenCV
 
 Intermediate: Emacs, Linux, ROS, LaTeX, C
 
