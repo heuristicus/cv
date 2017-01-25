@@ -4,7 +4,7 @@
 
 %A Few Useful Packages
 %\usepackage{marvosym}
-\usepackage{fontspec} 					%for loading fonts
+
 \usepackage{multirow}
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
@@ -18,11 +18,11 @@
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
 \usepackage{array}
-\usepackage[super]{nth} % 7th in superscript
 \definecolor{linkcolour}{rgb}{0,0,0}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
 %FONTS
+\usepackage{fontspec} 					%for loading fonts
 \defaultfontfeatures{Mapping=tex-text}
 %\setCJKmainfont{Meiryo}
 \setmainfont[Numbers=Lining,Ligatures=Common]{Adobe Garamond Pro}
@@ -50,12 +50,29 @@
 \begin{center}\Huge Michal Staniaszek\\
   \normalsize \vskip 0.3cm
   \begin{tabular}{rl}
-  Born \nth{7} December 1990 & British national\\
+  Born 7 December 1990 & British national\\
 \url{www.michalstaniaszek.com} & \href{mailto:contact@michalstaniaszek.com}{m.staniaszek@gmail.com}
   \end{tabular}
 \end{center}
 
 % \vspace*{-0.3cm}
+\section{Work Experience}
+\begin{tabular}{x{2.8cm}|p{13cm}}
+  \textsc{October 2016} to& \textbf{STRANDS Project Research Associate} at \textsc{University of Birmingham}, Birmingham, UK\\
+  \textsc{May 2017}&\footnotesize{Assisted project partners with system integration, improving software tools and monitoring to support robot deployment in an office. Transferred knowledge and integrated system at commercial partner facility.}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \textsc{March 2016} to& \textbf{Marie Skłodowska-Curie Early Stage Researcher} at \textsc{Fraunhofer IPA}, Stuttgart, Germany\\
+  \textsc{July 2016}&\footnotesize{PhD candidate in environment modelling and motion prediction in dynamic environments as part of the Horizon 2020 SECURE project. Left the post due to supervision issues.}\\\multicolumn{2}{c}{} \\[-0.2cm]
+
+  \textsc{July 2015} to& \textbf{Innovation Team Intern} at \textsc{Yujin Robot Co., Ltd}, Seoul, Republic of Korea\\
+  \textsc{January 2016}&\footnotesize{Python and C++ development in ROS for the GoCart logistics robot. Worked on behaviour trees and behaviour design, diagnostics, simulation layer implementation and module interfacing. Made contributions to several ROS packages.}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \multirow{2}{*}{\textsc{July 2013}} & \textbf{Systems and Software Assistant} at \textsc{Kaon Ltd}, Guildford, UK\\
+                                      &\footnotesize{Developed a GUI prototype for a portable device in Java, to demonstrate functionality to the customer. Set up and tested filesystems on linux for optimal operation on a large RAID device.}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  % \textsc{December 2011} to& \textbf{Waiter} at \textsc{Gyu-Kaku}, Shibaura, Tokyo, Japan\\
+  % \textsc{June 2012}&\footnotesize{Served food and took orders, working entirely in Japanese with Japanese co-workers and clientele.}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  % \textsc{July} to& \textbf{Technical Assistant} at \textsc{Japan Services Rent Ltd}, London, UK\\
+  % \textsc{September 2010}&\footnotesize{Assisted the company director with the development of a website. Used image manipulation tools to create images for the site. Solved hardware and software problems encountered by co-workers.}\\
+\end{tabular}
+
 \section{Education and Qualifications} 
 \begin{tabular}{x{2.8cm}|p{12cm}}
   \textsc{August 2013} to& \textbf{MSc Systems, Control and Robotics}, Robotics and Autonomous Systems track\\
@@ -72,24 +89,12 @@
   %\textsc{July} 2002& \textbf{St. Gregory's Roman Catholic Primary School}\\
 \end{tabular}
 
-\section{Work Experience}
-\begin{tabular}{x{2.8cm}|p{12cm}}
-  \textsc{July 2015} to& \textbf{Innovation Team Intern} at \textsc{Yujin Robot Co., Ltd}, Seoul, Republic of Korea\\
-  \textsc{January 2016}&\footnotesize{Python and C++ development in ROS for the GoCart delivery robot. Worked on behaviour trees, diagnostics and module interfacing.}\\\multicolumn{2}{c}{} \\[-0.2cm]
-  \multirow{2}{*}{\textsc{July 2013}} & \textbf{Systems and Software Assistant} at \textsc{Kaon Ltd}, Guildford, UK\\
-                                      &\footnotesize{Developed a GUI prototype for a portable device in Java, to demonstrate functionality to the customer. Set up and tested filesystems on linux for optimal operation on a large RAID device.}\\\multicolumn{2}{c}{} \\[-0.2cm]
-  \textsc{December 2011} to& \textbf{Waiter} at \textsc{Gyu-Kaku}, Shibaura, Tokyo, Japan\\
-  \textsc{June 2012}&\footnotesize{Served food and took orders, working entirely in Japanese with Japanese co-workers and clientele.}\\\multicolumn{2}{c}{} \\[-0.2cm]
-  \textsc{July} to& \textbf{Technical Assistant} at \textsc{Japan Services Rent Ltd}, London, UK\\
-  \textsc{September 2010}&\footnotesize{Assisted the company director with the development of a website. Used image manipulation tools to create images for the site. Solved hardware and software problems encountered by co-workers.}\\
-\end{tabular}
-
 \section{Academic and Research Activity}
 \begin{tabular}{x{2.8cm}|p{12cm}}
-  \textsc{January} to& Master's Thesis --- \textbf{Feature-Feature matching for Object retrieval in Point Clouds}\\
+  \textsc{January} to& Master's Thesis --- \textbf{Feature-Feature Matching for Object Retrieval in Point Clouds}\\
   \textsc{June 2015}&\footnotesize{Developed a system using PCL and ROS to extract features from point clouds, and find query objects in the resulting feature set. Performed an experimental evaluation to find good descriptors and interest point methods. Supervised by John Folkesson.}\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{July} to& Participant in \textbf{Tohoku University Engineering Summer Programme (TESP)}\\
-  \textsc{August 2014}&\footnotesize{Attended lectures on several different areas related to robotics, worked on a short project on obstacle avoidance for a tracked mobile robot.}\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{August 2014}&\footnotesize{Attended lectures on several different areas related to robotics, and worked on a short project on obstacle avoidance for a tracked mobile robot. Participants were robotics students from across the world. }\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{September 2012} to& Bachelor's Thesis --- \textbf{Time Delay Estimation in Gravitationally Lensed Photon Streams}\\
   \textsc{April 2013}&\footnotesize{Developed a system to estimate characteristic functions of streams with weighted least squares techniques and compare them with probabilistic techniques to estimate the time delay. Supervised by Peter Tiňo.}\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{January} to&Participant at \textbf{Student Autonomous Underwater Competition - Europe (SAUC-E)} \\
@@ -101,8 +106,7 @@
 \section{Teaching}
 \begin{tabular}{x{2.8cm}|p{12cm}}
   \textsc{January 2013} to& \textbf{Robot Programming Demonstrator} at \textsc{University of Birmingham}\\
-  \textsc{April 2013}&\footnotesize{Answered questions about the implementation
-    of various algorithms and the application of artificial intelligence techniques for use on LEGO NXT robots running LeJOS.}\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{April 2013}&\footnotesize{Answered questions from students about the implementation of various algorithms and the application of artificial intelligence techniques for use on LEGO NXT robots.}\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{September 2012} to& \textbf{Foundation Year Computer Science Demonstrator} at \textsc{University of Birmingham}\\
   \textsc{December 2012}&\footnotesize{Helped foundation year students understand basic programming concepts, and evaluated their performance in assignments.}\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{September 2010} to& \textbf{Software Workshop (Java) Demonstrator} at \textsc{University of Birmingham}\\
@@ -124,8 +128,8 @@
 \begin{minipage}[t]{0.47\textwidth}
   \section{Programming and Software}
   \begin{tabular}{rp{0.7\textwidth}}
-    Basic:& Bash, Matlab, OpenCV, PCL, CMake, Doxygen, Sphinx\\
-    Intermediate:& Emacs, Linux, Java, ROS, \LaTeX, C\\
+    Basic:& Java, C, Matlab, OpenCV, PCL, CMake, Emacs, \LaTeX\\
+    Intermediate:& Linux, ROS, bash\\
     Advanced:& C++, Python, Git
   \end{tabular}
   \vskip 0.2cm
@@ -139,8 +143,9 @@
     English:&Native\\
     Japanese:&Fluent\\
     Polish:&Fluent\\
-    Swedish:&Basic\\
-    Korean:&Basic
+    German:&Basic
+    % Swedish:&Basic\\
+    % Korean:&Basic
   \end{tabular}
 \end{minipage}
 
@@ -150,9 +155,9 @@ Cycling, Japanese language and culture, languages, music, photography, reading
 \section{Referees}
 \begin{center}
   \begin{tabular}{lll}
-  Peter Ti{\v{n}}o& John Folkesson & Daniel Stonier \\
-  Professor  & Assistant Professor & Chief Algorithms Architect\\
-  p.tino@cs.bham.ac.uk & johnf@kth.se & stonier@yujinrobot.com\\
+  Nick Hawes& John Folkesson & Daniel Stonier \\
+  Reader in Autonomous Intelligent Robotics & Assistant Professor & Chief Algorithms Architect\\
+  n.a.hawes@cs.bham.ac.uk & johnf@kth.se & stonier@yujinrobot.com\\
   School of Computer Science& Centre for Autonomous Systems & Yujin Robot Co., Ltd  \rule{0pt}{0.6cm} \\
   University of Birmingham& Kungliga Tekniska H\"{o}gskolan & 601 Namsung Plaza, 130  \\
   Edgbaston, Birmingham & 100 44 & Digital-ro, Geumcheon-gu, Seoul \\
