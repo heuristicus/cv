@@ -12,7 +12,7 @@
 % an alternative to Layaureo can be ** \usepackage{fullpage} **
 %\usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
-\usepackage[left=2cm, right=2cm,bottom=1cm,top=1.5cm]{geometry}
+\usepackage[left=2cm, right=2cm,bottom=1cm,top=1.2cm]{geometry}
 \setlength{\parskip}{0.3cm plus4mm minus3mm}
 %\setlength{\parskip}{0.2cm}
 %Setup hyperref package, and colours for links
@@ -22,11 +22,12 @@
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
 %FONTS
-\usepackage{fontspec} 					%for loading fonts
-\defaultfontfeatures{Mapping=tex-text}
+\usepackage[T1]{fontenc} 					%for loading fonts
+\usepackage{libertine}
+% \defaultfontfeatures{Mapping=tex-text}
 %\setCJKmainfont{Meiryo}
-\setmainfont[Numbers=Lining,Ligatures=Common]{Adobe Garamond Pro}
-\setmonofont{Adobe Garamond Pro}
+% \setmainfont[Numbers=Lining,Ligatures=Common]{Adobe Garamond Pro}
+% \setmonofont{Adobe Garamond Pro}
 \linespread{1.2}
 \newcolumntype{x}[1]{%
 >{\raggedleft\hspace{0pt}}p{#1}}%
@@ -46,27 +47,42 @@
 \begin{document}
 \thispagestyle{empty}
 \pagestyle{empty}
-%\par{\centering {\Huge \ruby{Micha\l}{\begin{IPA}[mixaw]\end{IPA}} \ruby{\textsc{Staniaszek}}{\begin{IPA}[sta\:na\:sek]\end{IPA}} }\bigskip\par}
-\begin{center}\Huge Michal Staniaszek\\
-  \normalsize \vskip 0.3cm
-  \begin{tabular}{rl}
-  Born 7 December 1990 & British national\\
-\url{www.michalstaniaszek.com} & \href{mailto:contact@michalstaniaszek.com}{m.staniaszek@gmail.com}
-  \end{tabular}
-\end{center}
+% \par{\centering {\Huge \ruby{Micha\l}{\begin{IPA}[mixaw]\end{IPA}} \ruby{\textsc{Staniaszek}}{\begin{IPA}[sta\:na\:sek]\end{IPA}} }\bigskip\par}
+% \begin{tabular}{rc}
+%   {\Huge Michal Staniaszek}& Born 7 December 1990, British national
+% \href{mailto:contact@michalstaniaszek.com}{m.staniaszek@gmail.com}&  
+% \end{tabular}
+  {\Huge Michal \textsc{Staniaszek}} \hspace*{0.3cm} Born 7 December 1990, British national \hspace*{0.3cm} \href{mailto:contact@michalstaniaszek.com}{m.staniaszek@gmail.com}  
 
-% \vspace*{-0.3cm}
+
+\vspace*{1pt}
 \section{Work Experience}
 \begin{tabular}{x{2.8cm}|p{13cm}}
+  \textsc{June 2017} to& \textbf{Research Assistant} at \textsc{Technische Universit{\"a}t Wien}, Vienna, Austria\\
+  \textsc{Present}&\footnotesize{PhD candidate and lead teaching assistant in the Vision for Robotics group, working on semantic segmentation and mapping for long-term autonomous robot operation.}\\\multicolumn{2}{c}{} \\[-0.2cm]
   \textsc{October 2016} to& \textbf{STRANDS Project Research Associate} at \textsc{University of Birmingham}, Birmingham, UK\\
-  \textsc{May 2017}&\footnotesize{Assisted project partners with system integration, improving software tools and monitoring to support robot deployment in an office. Transferred knowledge and integrated system at commercial partner facility.}\\\multicolumn{2}{c}{} \\[-0.2cm]
-  \textsc{March 2016} to& \textbf{Marie Skłodowska-Curie Early Stage Researcher} at \textsc{Fraunhofer IPA}, Stuttgart, Germany\\
-  \textsc{July 2016}&\footnotesize{PhD candidate in environment modelling and motion prediction in dynamic environments as part of the Horizon 2020 SECURE project. Left the post due to supervision issues.}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \textsc{May 2017}&\footnotesize{Fixed term contract assisting project partners with system integration. Improved software tools and monitoring to support robot deployment in an office. Aggregated and improved project documentation.}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \begin{comment}
+    General work on the STRANDS project codebase, improving the user-facing functionality. Mostly ROS development in Python and C++, along with bash scripting and some linux networking and system administration activities. 
 
+    Involved in the deployment of one of the STRANDS project robots in an office environment, where I helped monitor and diagnose issues with the robot and tried to ensure that the deployment achieved its research goals. I worked with researchers from the other universities involved in the project to help them get their parts of the system tested and working during the deployment.
+  \end{comment}
+  \textsc{March} to& \textbf{Marie Skłodowska-Curie Early Stage Researcher} at \textsc{Fraunhofer IPA}, Germany\\
+  \textsc{July 2016}&\footnotesize{PhD candidate in environment modelling and motion prediction in dynamic environments as part of the Horizon 2020 SECURE project. Left the post due to incompatibility.}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \begin{comment}
+    Working as a fellow of the SECURE project, part of the European Union’s Horizon 2020 research and innovation programme. In brief, the project aims to improve the safety of robots with a view to using them in environments which require interaction with humans. My responsibility was multimodal modelling and motion prediction in dynamic environments. 
+
+    In brief, I was to use computer vision and other sensing modalities available to the robot to map dynamic environments, storing information about the nature of the dynamics, and then feed this information to higher and lower level information processing so that it could be used to improve the safety of the overall system. Some of the project partners were using robots developed at Fraunhofer (the care-o-bot series), and so part of my job was to provide software support for the robots.
+
+    I left the position after 4 months due to an environment that I felt was not conducive to me completing a PhD.
+  \end{comment}
   \textsc{July 2015} to& \textbf{Innovation Team Intern} at \textsc{Yujin Robot Co., Ltd}, Seoul, Republic of Korea\\
-  \textsc{January 2016}&\footnotesize{Python and C++ development in ROS for the GoCart logistics robot. Worked on behaviour trees and behaviour design, diagnostics, simulation layer implementation and module interfacing. Made contributions to several ROS packages.}\\\multicolumn{2}{c}{} \\[-0.2cm]
-  \multirow{2}{*}{\textsc{July 2013}} & \textbf{Systems and Software Assistant} at \textsc{Kaon Ltd}, Guildford, UK\\
-                                      &\footnotesize{Developed a GUI prototype for a portable device in Java, to demonstrate functionality to the customer. Set up and tested filesystems on linux for optimal operation on a large RAID device.}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \begin{comment}
+    Part of the team working on development of software for the GoCart delivery robot, designed to operate in nursing homes and other healthcare and hospitality environments. Worked on behaviour trees and behaviour implementation, diagnostics and module interfacing in C++ and Python with ROS. Made some small contributions to the audio_common and diagnostics packages in ROS.
+  \end{comment}
+  \textsc{January 2016}&\footnotesize{Python and C++ development in ROS for the GoCart logistics robot. Worked on behaviour trees and behaviour design, diagnostics, simulation layer implementation and module interfacing. Made contributions to several ROS packages.}\\
+  % \multirow{2}{*}{\textsc{July 2013}} & \textbf{Systems and Software Assistant} at \textsc{Kaon Ltd}, Guildford, UK\\
+  %                                     &\footnotesize{Developed a GUI prototype for a portable device in Java, to demonstrate functionality to the customer. Set up and tested filesystems on linux for optimal operation on a large RAID device.}\\\multicolumn{2}{c}{} \\[-0.2cm]
   % \textsc{December 2011} to& \textbf{Waiter} at \textsc{Gyu-Kaku}, Shibaura, Tokyo, Japan\\
   % \textsc{June 2012}&\footnotesize{Served food and took orders, working entirely in Japanese with Japanese co-workers and clientele.}\\\multicolumn{2}{c}{} \\[-0.2cm]
   % \textsc{July} to& \textbf{Technical Assistant} at \textsc{Japan Services Rent Ltd}, London, UK\\
@@ -74,7 +90,7 @@
 \end{tabular}
 
 \section{Education and Qualifications} 
-\begin{tabular}{x{2.8cm}|p{12cm}}
+\begin{tabular}{x{2.8cm}|p{13cm}}
   \textsc{August 2013} to& \textbf{MSc Systems, Control and Robotics}, Robotics and Autonomous Systems track\\
   \textsc{June 2015}& \textsc{KTH Royal Institute of Technology}, Stockholm, Sweden\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{September 2009} to& \textbf{BSc Computer Science with Study Abroad}, First Class Honours\\
@@ -90,12 +106,12 @@
 \end{tabular}
 
 \section{Academic and Research Activity}
-\begin{tabular}{x{2.8cm}|p{12cm}}
-  \textsc{January} to& Master's Thesis --- \textbf{Feature-Feature Matching for Object Retrieval in Point Clouds}\\
+\begin{tabular}{x{2.8cm}|p{13cm}}
+  \textsc{January} to& Master's Thesis: \textbf{Feature-Feature Matching for Object Retrieval in Point Clouds}\\
   \textsc{June 2015}&\footnotesize{Developed a system using PCL and ROS to extract features from point clouds, and find query objects in the resulting feature set. Performed an experimental evaluation to find good descriptors and interest point methods. Supervised by John Folkesson.}\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{July} to& Participant in \textbf{Tohoku University Engineering Summer Programme (TESP)}\\
   \textsc{August 2014}&\footnotesize{Attended lectures on several different areas related to robotics, and worked on a short project on obstacle avoidance for a tracked mobile robot. Participants were robotics students from across the world. }\\\multicolumn{2}{c}{}\\[-0.2cm]
-  \textsc{September 2012} to& Bachelor's Thesis --- \textbf{Time Delay Estimation in Gravitationally Lensed Photon Streams}\\
+  \textsc{September 2012} to& Bachelor's Thesis: \textbf{Time Delay Estimation in Gravitationally Lensed Photon Streams}\\
   \textsc{April 2013}&\footnotesize{Developed a system to estimate characteristic functions of streams with weighted least squares techniques and compare them with probabilistic techniques to estimate the time delay. Supervised by Peter Tiňo.}\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{January} to&Participant at \textbf{Student Autonomous Underwater Competition - Europe (SAUC-E)} \\
   \textsc{July 2011}&\footnotesize{Collaboration between the University of Birmingham and University of Southampton to prepare the Delphin AUV for the competition in July. Converted the control system from Matlab to ROS Python.}\\\multicolumn{2}{c}{}\\[-0.2cm]
@@ -104,7 +120,9 @@
 \end{tabular}
 
 \section{Teaching}
-\begin{tabular}{x{2.8cm}|p{12cm}}
+\begin{tabular}{x{2.8cm}|p{13cm}}
+  \textsc{June 2017} to& \textbf{Lead Teaching Assistant} at \textsc{Vision for Robotics Group, Technische Universit{\"a}t Wien}\\
+  \textsc{Present}&\footnotesize{Administering the \emph{Machine Vision and Cognitive Robotics} and \emph{Robotics and Computer Vision} courses. Updating and maintaining assignment content, managing tutors, grading assignments, and providing assistance to students}\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{January 2013} to& \textbf{Robot Programming Demonstrator} at \textsc{University of Birmingham}\\
   \textsc{April 2013}&\footnotesize{Answered questions from students about the implementation of various algorithms and the application of artificial intelligence techniques for use on LEGO NXT robots.}\\\multicolumn{2}{c}{}\\[-0.2cm]
   \textsc{September 2012} to& \textbf{Foundation Year Computer Science Demonstrator} at \textsc{University of Birmingham}\\
@@ -127,11 +145,7 @@
 
 \begin{minipage}[t]{0.47\textwidth}
   \section{Programming and Software}
-  \begin{tabular}{rp{0.7\textwidth}}
-    Basic:& Java, C, Matlab, OpenCV, PCL, CMake, Emacs, \LaTeX\\
-    Intermediate:& Linux, ROS, bash\\
-    Advanced:& C++, Python, Git
-  \end{tabular}
+  Python, C++, ROS, git, Linux, \LaTeX
   \vskip 0.2cm
   \centering
   Public repositories at \href{http://www.github.com/heuristicus}{github.com/heuristicus}
@@ -139,30 +153,38 @@
 \hskip 0.04\textwidth
 \begin{minipage}[t]{0.47\textwidth}
   \section{Languages}
-  \begin{tabular}{rlr}%l}
-    English:&Native\\
-    Japanese:&Fluent\\
-    Polish:&Fluent\\
-    German:&Basic
-    % Swedish:&Basic\\
-    % Korean:&Basic
-  \end{tabular}
+    English (native), Japanese (fluent), Polish (bilingual)
 \end{minipage}
 
-\section{Interests}
-Cycling, Japanese language and culture, languages, music, photography, reading
+% \section{Interests}
+% Cycling, Japanese language and culture, languages, music, photography, reading,
+% bouldering, politics, history
 
 \section{Referees}
+Addresses and positions for referees are current. Bold text indicates
+where the person supervised me.
 \begin{center}
   \begin{tabular}{lll}
-  Nick Hawes& John Folkesson & Daniel Stonier \\
-  Reader in Autonomous Intelligent Robotics & Assistant Professor & Chief Algorithms Architect\\
-  n.a.hawes@cs.bham.ac.uk & johnf@kth.se & stonier@yujinrobot.com\\
-  School of Computer Science& Centre for Autonomous Systems & Yujin Robot Co., Ltd  \rule{0pt}{0.6cm} \\
-  University of Birmingham& Kungliga Tekniska H\"{o}gskolan & 601 Namsung Plaza, 130  \\
-  Edgbaston, Birmingham & 100 44 & Digital-ro, Geumcheon-gu, Seoul \\
-  B15 2TT, UK& Stockholm, Sweden & 153-782, Republic of Korea
-\end{tabular}
+    \textbf{University of Birmingham} & \textbf{Technische Universit{\"a}t Wien} & \textbf{Yujin Robot}\\
+    Nick Hawes& Markus Vincze & Daniel Stonier \\
+    Associate Professor of Robotics & Associate Professor & Program Manager --- Simulation\\
+    nickh@robots.ox.ac.uk & vincze@acin.tuwien.ac.at & d.stonier@gmail.com\\
+    Oxford Robotics Institute& Automation and Control Institute & Totota Research Institute  \rule{0pt}{0.5cm} \\
+    23 Banbury Road, Felstead House& Technische Universit{\"a}t Wien & One Kendall Square  \\
+    Oxford & Gu{\ss}hausstrasse 27-29 & Building 100, Suite 1-201 \\
+    OX2 6NN, UK& 1040, Vienna, Austria & Cambridge, MA 02139, USA
+  \end{tabular}
+  
+    % \begin{tabular}{lll}
+    %   John Folkesson
+    %   Assistant Professor
+    %   johnf@kth.se
+    %   Centre for Autonomous Systems
+    %   Kungliga Tekniska H\"{o}gskolan
+    %   100 44
+    %   Stockholm, Sweden
+    % \end{tabular}
+
 \end{center}
 
 
@@ -255,3 +277,8 @@ Cycling, Japanese language and culture, languages, music, photography, reading
 \end{center}
 \end{comment}
 \end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-engine: xetex
+%%% End:
