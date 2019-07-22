@@ -8,12 +8,11 @@ August 2013 to June 2015:
 
 September 2009 to June 2013:
   BSc Computer Science with Study Abroad, First Class Honours
-  Top of graduating class (final year: 92%, weighted average: 89%)
   University of Birmingham, Birmingham, UK
 
 September 2011 to July 2012:
   Japanese Language Programme (Advanced level), Keio University, Tokyo, Japan
-  Japanese Language Proficiency Test level N1 (90%)
+  Japanese Language Proficiency Test level N1 (Highest level)
 
 
 Academic and Research Activity
@@ -52,6 +51,7 @@ October 2010 to July 2013:
     undergraduate students in solving robotics problems and increasing the
     profile of the field in the school.
 
+
 Teaching
 ----------------------------------------
 January 2013 to April 2013:
@@ -74,6 +74,7 @@ September 2010 to April 2011:
      One of five second year students selected to demonstrate for the First Year
      Workshop Java module. Provided advice on assignments, programming concepts, and
      the Java API.
+
 
 Work Experience
 ----------------------------------------
@@ -98,6 +99,7 @@ July to September 2010:
     manipulation tools to create images for the site. Solved hardware and software
     problems encountered by co-workers.
 
+
 Bursaries, Scholarships and Awards
 ----------------------------------------
 July 2013:
@@ -118,6 +120,7 @@ July to September 2011:
     Bursary to support a summer research project to investigate particle filter
     localisation for AUVs.
 
+
 Programming and Software
 ----------------------------------------
 Basic: Bash, Subversion, Python, Matlab, PCL, OpenCV
@@ -128,12 +131,14 @@ Advanced: C++, Java, Git
   
 Public repositories at http://www.github.com/heuristicus
 
+
 Languages
 ----------------------------------------
 English: Native
 Japanese: Fluent
 Polish: Fluent
 Swedish: Basic
+
 
 Referees
 ----------------------------------------
