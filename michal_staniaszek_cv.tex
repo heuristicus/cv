@@ -1,5 +1,5 @@
 % !!!!Compile with XeTeX!!!!
-% layout from http://aleplasmati.comuv.com/doc/cv.pdf
+% layout inspired by http://aleplasmati.comuv.com/doc/cv.pdf
 \documentclass[a4paper,10pt]{article}
 
 %A Few Useful Packages
@@ -12,18 +12,29 @@
 % an alternative to Layaureo can be ** \usepackage{fullpage} **
 %\usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
-\usepackage[left=2cm, right=2cm,bottom=1cm,top=1.2cm]{geometry}
+\usepackage[left=1.5cm, right=1.5cm,bottom=1cm,top=1.2cm]{geometry}
 \setlength{\parskip}{0.3cm plus4mm minus3mm}
 %\setlength{\parskip}{0.2cm}
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
 \usepackage{array}
-\definecolor{linkcolour}{rgb}{0,0,0}
+\definecolor{linkcolour}{RGB}{100,100,100}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
 %FONTS
 \usepackage[T1]{fontenc} 					%for loading fonts
-\usepackage{libertine}
+\usepackage[scaled]{libertine}
+\usepackage{inconsolata}
+% use this for sans serif
+%\renewcommand*\familydefault{\sfdefault}
+
+%itemize modifications to take less space
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*,noitemsep}
+
+% use dashes instead of dots for itemize
+\renewcommand\labelitemi{--}
+
 % \defaultfontfeatures{Mapping=tex-text}
 %\setCJKmainfont{Meiryo}
 % \setmainfont[Numbers=Lining,Ligatures=Common]{Adobe Garamond Pro}
@@ -35,6 +46,7 @@
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+%\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[]
 \titlespacing{\section}{0pt}{3pt}{3pt}
 
 \usepackage[absolute]{textpos}
@@ -43,6 +55,8 @@
 \setlength{\TPVertModule}{\TPHorizModule}
 \textblockorigin{2mm}{0.65\paperheight}
 \setlength{\parindent}{0pt}
+\newcommand{\datelen}{1.8cm}
+\newcommand{\descrlen}{15.5cm}
 
 \begin{document}
 \thispagestyle{empty}
@@ -50,37 +64,78 @@
 % \par{\centering {\Huge \ruby{Micha\l}{\begin{IPA}[mixaw]\end{IPA}} \ruby{\textsc{Staniaszek}}{\begin{IPA}[sta\:na\:sek]\end{IPA}} }\bigskip\par}
 % \begin{tabular}{rc}
 %   {\Huge Michal Staniaszek}& Born 7 December 1990, British national
-% \href{mailto:contact@michalstaniaszek.com}{m.staniaszek@gmail.com}&  
+% \href{mailto: m.staniaszek@gmail.com}{m.staniaszek@gmail.com}&  
 % \end{tabular}
-  {\Huge \textsc{Michal Staniaszek}} \hspace*{0.3cm} Born 7 December 1990, British national \hspace*{0.3cm} \href{mailto:contact@michalstaniaszek.com}{m.staniaszek@gmail.com}  
+  {\Huge Michal Staniaszek} \hspace*{0.3cm}British national \hspace*{0.3cm} \href{mailto: m.staniaszek@gmail.com}{m.staniaszek@gmail.com} \hspace*{0.3cm} \href{https://github.com/heuristicus}{github.com/heuristicus}
 
 
 \vspace*{1pt}
 \section{Employment History}
-\begin{tabular}{x{2.8cm}|p{13cm}}
-  \textsc{June 2017} to& \textbf{Research Assistant} at \textsc{Technische Universit{\"a}t Wien}, Vienna, Austria\\
-  \textsc{January 2019}&\footnotesize{PhD candidate and teaching assistant in the Vision for Robotics group, working on semantic segmentation and mapping for long-term autonomous robot operation.}\\\multicolumn{2}{c}{} \\[-0.2cm]
-  \textsc{October 2016} to& \textbf{STRANDS Project Research Associate} at \textsc{University of Birmingham}, Birmingham, UK\\
-  \textsc{May 2017}&\footnotesize{Assisted project partners with system integration. Facilitated robot deployment on site and developed software tools for running and monitoring the system. Aggregated and improved software package documentation.}\\\multicolumn{2}{c}{} \\[-0.2cm]
+\begin{tabular}{x{\datelen}|p{\descrlen}}
+  \textsc{Nov 2019} to& \textbf{Robotics Software Engineer} at \textsc{Oxford Robotics Institute, University of Oxford}, Oxford, UK\\
+  \textsc{Present}&
+  \small{
+  \vspace{-0.4cm}
+  \begin{itemize}
+    \item Lead developer on robot-agnostic autonomy system used across the institute on Spot, Scitos X3, HSR, and Jackal.
+    \item Responsible for integration of hardware and software capabilities on Spot. Improved the \href{https://github.com/clearpathrobotics/spot_ros}{spot\_ros} package.
+    \item Refined internal Spot risk assessment and developed additional safety software and hardware  with the hardware team.
+    \item Ran trials and demonstrations of Spot to the public, project funders, and industry, including nuclear and construction.
+    \item Assisted development on the \emph{Frontier} mapping device, integrating onto robots and automating software setup.
+    \item Created \href{https://github.com/ori-drs/procman_ros}{procman\_ros}, porting the existing distributed process manager package to ROS and GTK3+.
+    \vspace{-0.5cm}
+  \end{itemize}
+  }\\
+  \multicolumn{2}{c}{} \\[-0.2cm]
+  \textsc{Jun 2017} to& \textbf{Research Assistant} at \textsc{Vision For Robotics Group, Technische Universit{\"a}t Wien}, Vienna, Austria\\
+  \textsc{Jan 2019}&\small{
+  \vspace{-0.4cm}
+  \begin{itemize}
+  \item PhD candidate and teaching assistant, working on semantic segmentation and mapping for long-term robot autonomy.
+  \item Reviewed literature on 3d segmentation and SLAM, evaluated performance of various state of the art algorithms.
+  \vspace{-0.5cm}
+  \end{itemize}}\\
+  \multicolumn{2}{c}{} \\[-0.2cm]
+  \textsc{Oct 2016} to& \textbf{STRANDS Project Research Associate} at \textsc{University of Birmingham}, Birmingham, UK\\
+  \textsc{May 2017}&\small{
+    \vspace{-0.4cm}
+  \begin{itemize}
+  \item On-site support for robot deployment, assisting project partners setting up and debugging their code on the Scitos G5.
+  \item General linux hardware and software support, network configuration and status monitoring.
+  \item Created RViz tools and panels to display and quickly and easily modify the graph-based autonomy system.
+  \item Implemented scripts for robot startup and easier creation of task routines for long-term autonomy.
+  \item Improved software package documentation, scripted aggregation of documentation from all project repositories.
+  \vspace{-0.5cm}
+  \end{itemize}}\\
+  \multicolumn{2}{c}{} \\[-0.2cm]
   \begin{comment}
     General work on the STRANDS project codebase, improving the user-facing functionality. Mostly ROS development in Python and C++, along with bash scripting and some linux networking and system administration activities.
 
     Involved in the deployment of one of the STRANDS project robots in an office environment, where I helped monitor and diagnose issues with the robot and tried to ensure that the deployment achieved its research goals. I worked with researchers from the other universities involved in the project to help them get their parts of the system tested and working during the deployment.
   \end{comment}
-  \textsc{March} to& \textbf{Marie Skłodowska-Curie Early Stage Researcher} at \textsc{Fraunhofer IPA}, Germany\\
-  \textsc{July 2016}&\footnotesize{PhD candidate in environment modelling and motion prediction in dynamic environments as part of the Horizon 2020 SECURE project.}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \begin{comment}
+  \textsc{Mar} to& \textbf{Marie Skłodowska-Curie Early Stage Researcher} at \textsc{Fraunhofer IPA}, Germany\\
+  \textsc{Jul 2016}&\footnotesize{PhD candidate in environment modelling and motion prediction in dynamic environments as part of the Horizon 2020 SECURE project.}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \end{comment}
   \begin{comment}
     Working as a fellow of the SECURE project, part of the European Union’s Horizon 2020 research and innovation programme. In brief, the project aims to improve the safety of robots with a view to using them in environments which require interaction with humans. My responsibility was multimodal modelling and motion prediction in dynamic environments. 
 
     In brief, I was to use computer vision and other sensing modalities available to the robot to map dynamic environments, storing information about the nature of the dynamics, and then feed this information to higher and lower level information processing so that it could be used to improve the safety of the overall system. Some of the project partners were using robots developed at Fraunhofer (the care-o-bot series), and so part of my job was to provide software support for the robots.
-
-    I left the position after 4 months due to an environment that I felt was not conducive to me completing a PhD.
   \end{comment}
-  \textsc{July 2015} to& \textbf{Innovation Team Intern} at \textsc{Yujin Robot Co., Ltd}, Seoul, Republic of Korea\\
+  \textsc{Jul 2015} to& \textbf{Innovation Team Intern} at \textsc{Yujin Robot Co., Ltd}, Seoul, Republic of Korea\\
   \begin{comment}
     Part of the team working on development of software for the GoCart delivery robot, designed to operate in nursing homes and other healthcare and hospitality environments. Worked on behaviour trees and behaviour implementation, diagnostics and module interfacing in C++ and Python with ROS. Made some small contributions to the audio_common and diagnostics packages in ROS.
   \end{comment}
-  \textsc{January 2016}&\footnotesize{Python and C++ development in ROS for a logistics robot. Worked on behaviour trees and behaviour design, diagnostics, simulation layer implementation and module interfacing. Made contributions to several ROS packages.}\\
+  \textsc{Jan 2016}&\small{
+      \vspace{-0.4cm}
+  \begin{itemize}
+   \item Co-design and implementation of the \href{https://github.com/splintered-reality/py_trees}{py\_trees} package and visualisation, now a popular Python behaviour tree library.
+  \item Behaviour design, diagnostics, simulation layer implementation, and module interfacing in ROS for the \href{https://yujinrobot.com/autonomous-mobility-solutions/mobile-platform/gocart/}{GoCart} robot. 
+  \item Helped with ROS integration of web interface packages for robot control using REST and Celery.
+  \item Contributed to open source ROS packages \href{https://github.com/ros/diagnostics}{diagnostic\_aggregator} and \href{https://github.com/ros-drivers/audio_common}{audio\_common}.
+  \vspace{-0.5cm}
+  \end{itemize}
+  }\\
   % \multirow{2}{*}{\textsc{July 2013}} & \textbf{Systems and Software Assistant} at \textsc{Kaon Ltd}, Guildford, UK\\
   %                                     &\footnotesize{Developed a GUI prototype for a portable device in Java, to demonstrate functionality to the customer. Set up and tested filesystems on linux for optimal operation on a large RAID device.}\\\multicolumn{2}{c}{} \\[-0.2cm]
   % \textsc{December 2011} to& \textbf{Waiter} at \textsc{Gyu-Kaku}, Shibaura, Tokyo, Japan\\
@@ -90,72 +145,149 @@
 \end{tabular}
 
 \section{Education and Qualifications} 
-\begin{tabular}{x{2.8cm}|p{13cm}}
-  \textsc{August 2013} to& \textbf{MSc Systems, Control and Robotics}, Robotics and Autonomous Systems track\\
-  \textsc{June 2015}& \textsc{KTH Royal Institute of Technology}, Stockholm, Sweden\\\multicolumn{2}{c}{}\\[-0.2cm]
-  \textsc{September 2009} to& \textbf{BSc Computer Science with Study Abroad}, First Class Honours\\
-  \textsc{June 2013}%& \small{Computer Science Prize (highest grade), Research Committee Project Prize (best dissertation)}\\
+\begin{tabular}{x{\datelen}|p{\descrlen}}
+  \textsc{Aug 2013} to& \textbf{MSc Systems, Control and Robotics}, Robotics and Autonomous Systems track\\
+  \textsc{Jun 2015}& \textsc{KTH Royal Institute of Technology}, Stockholm, Sweden\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{Sep 2009} to& \textbf{BSc (Hons) Computer Science with Study Abroad}, First Class Honours\\
+  \textsc{Jun 2013}%& \small{Computer Science Prize (highest grade), Research Committee Project Prize (best dissertation)}\\
                       &\textsc{University of Birmingham}, Birmingham, UK\\\multicolumn{2}{c}{}\\[-0.2cm]
-  \textsc{September 2011} to& \textbf{Japanese Language Programme}, Advanced Level\\ 
-  \textsc{July 2012}& \small{Japanese Language Proficiency Test level N1 (Highest level)}\\
-                         &\textsc{Keio University}, Tokyo, Japan
+  \textsc{Sep 2011} to& \textbf{Japanese Language Programme}, Advanced Level\\ 
+  \textsc{Jul 2012}& \textsc{Keio University}, Tokyo, Japan\\
+                         &\small{Japanese Language Proficiency Test level N1 (Highest level)}
   %\textsc{September 2007} to& A-level \textbf{Mathematics, Physics, Computing and Polish}\\ 
   %\textsc{July 2009}& \textsc{St. Dominic's Sixth Form College}, London, UK\\
   %\textsc{July} 2007& \textbf{Cardinal Wiseman Roman Catholic High School}\\
   %\textsc{July} 2002& \textbf{St. Gregory's Roman Catholic Primary School}\\
 \end{tabular}
-
+\section{Publications}
+\begin{tabular}{x{\datelen}|p{\descrlen}}
+  \textsc{May 2022}& Street, C., Lacerda, B., Staniaszek, M., Mühlig, M., \& Hawes, N. \textbf{Context-Aware Modelling for Multi-Robot Systems Under Uncertainty}. 21st International Conference on Autonomous Agents and Multiagent Systems (AAMAS 22)\\
+  &\small{
+  \vspace{-0.4cm}
+  \begin{itemize}
+  \item Multi-robot ROS configuration of nav and other packages for Jackals in sim and on physical hardware for experiments.
+  \item Configured hardware and linux network configuration for multi-robot operation.
+  \vspace{-0.5cm}
+  \end{itemize}}\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{Jun 2015}& Staniaszek, M. \textbf{Feature-Feature Matching for Object Retrieval in Point Clouds} [Master's Thesis]\\
+  &\small{
+  \vspace{-0.4cm}
+  \begin{itemize}
+  \item Developed a system with PCL and ROS to extract features from point clouds and query the feature set for objects.
+  \item Performed a comparative evaluation to find good descriptors and interest point methods. Supervised by John Folkesson.
+  \vspace{-1cm}
+  \end{itemize}}\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{Apr 2013}&Staniaszek, M. \textbf{Time Delay Estimation in Gravitationally Lensed Photon Streams} [Bachelor's Thesis]\\
+  &\small{
+  \vspace{-0.4cm}
+  \begin{itemize}
+  \item Created software to estimate characteristic functions of streams with weighted least squares techniques.
+  \item Compared streams with probabilistic techniques to estimate the time delay. Supervised by Peter Tiňo.
+  \vspace{-0.5cm}
+  \end{itemize}}
+\end{tabular}
+%\newpage
+\begin{comment}
 \section{Academic and Research Activity}
-\begin{tabular}{x{2.8cm}|p{13cm}}
-  \textsc{January} to& Master's Thesis: \textbf{Feature-Feature Matching for Object Retrieval in Point Clouds}\\
-  \textsc{June 2015}&\footnotesize{Developed a system using PCL and ROS to extract features from point clouds, and find query objects in the resulting feature set. Performed an experimental evaluation to find good descriptors and interest point methods. Supervised by John Folkesson.}\\\multicolumn{2}{c}{}\\[-0.2cm]
-  \textsc{July} to& Participant in \textbf{Tohoku University Engineering Summer Programme (TESP)}\\
-  \textsc{August 2014}&\footnotesize{Attended lectures on several different areas related to robotics, and worked on a short project on obstacle avoidance for a tracked mobile robot.}\\\multicolumn{2}{c}{}\\[-0.2cm]
-  \textsc{September 2012} to& Bachelor's Thesis: \textbf{Time Delay Estimation in Gravitationally Lensed Photon Streams}\\
-  \textsc{April 2013}&\footnotesize{Developed a system to estimate characteristic functions of streams with weighted least squares techniques and compare them with probabilistic techniques to estimate the time delay. Supervised by Peter Tiňo.}\\\multicolumn{2}{c}{}\\[-0.2cm]
-  \textsc{January} to&Participant at \textbf{Student Autonomous Underwater Competition - Europe (SAUC-E)} \\
-  \textsc{July 2011}&\footnotesize{Collaboration between the University of Birmingham and University of Southampton to prepare the Delphin AUV for the competition in July. Converted the control system from Matlab to ROS Python.}\\\multicolumn{2}{c}{}\\[-0.2cm]
-  \textsc{October 2010} to&Founding member of \textbf{Birmingham Autonomous Robotics Club}\\
-  \textsc{July 2013}&\footnotesize{Co-founded the club due to interest from computer science faculty and undergraduate students in solving robotics problems and increasing the profile of the field in the school.}\\
+\begin{tabular}{x{\datelen}|p{\descrlen}}
+  \textsc{Jan} to& Master's Thesis: \textbf{Feature-Feature Matching for Object Retrieval in Point Clouds}\\
+  \textsc{Jun 2015}&\footnotesize{Developed a system using PCL and ROS to extract features from point clouds, and find query objects in the resulting feature set. Performed an experimental evaluation to find good descriptors and interest point methods. Supervised by John Folkesson.}\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{Jul} to& Participant in \textbf{Tohoku University Engineering Summer Programme (TESP)}\\
+  \textsc{Aug 2014}&\footnotesize{Attended lectures on several different areas related to robotics, and worked on a short project on obstacle avoidance for a tracked mobile robot.}\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{Sep 2012} to& Bachelor's Thesis: \textbf{Time Delay Estimation in Gravitationally Lensed Photon Streams}\\
+  \textsc{Apr 2013}&\footnotesize{Developed a system to estimate characteristic functions of streams with weighted least squares techniques and compare them with probabilistic techniques to estimate the time delay. Supervised by Peter Tiňo.}
+  \multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{Jan} to&Participant at \textbf{Student Autonomous Underwater Competition - Europe (SAUC-E)} \\
+  \textsc{Jul 2011}&\footnotesize{Collaboration between the University of Birmingham and University of Southampton to prepare the Delphin AUV for the competition in July. Converted the control system from Matlab to ROS Python.}\\\multicolumn{2}{c}{}\\[-0.2cm]
+ 
+  \textsc{Oct 2010} to&Founding member of \textbf{Birmingham Autonomous Robotics Club}\\
+  \textsc{Jul 2013}&\footnotesize{Co-founded the club due to interest from computer science faculty and undergraduate students in solving robotics problems and increasing the profile of the field in the school.}\\
 \end{tabular}
-
+\end{comment}
+\newpage
 \section{Teaching}
-\begin{tabular}{x{2.8cm}|p{13cm}}
-  \textsc{June 2017} to& \textbf{Teaching Assistant} at \textsc{Vision for Robotics Group, Technische Universit{\"a}t Wien}\\
-  \textsc{January 2019}&\footnotesize{Administering the \emph{Machine Vision and Cognitive Robotics} and \emph{Robotics and Computer Vision} courses. Updating and maintaining assignment content, managing tutors, grading assignments, and providing assistance to students.}\\\multicolumn{2}{c}{}\\[-0.2cm]
-  \textsc{January 2017} to& \textbf{Robot Programming Demonstrator} at \textsc{University of Birmingham}\\
-  \textsc{April 2017}&\footnotesize{Discussed theoretical and software problems with students to help them complete assignments and understand the AI concepts being taught. Graded student assignments.}\\\multicolumn{2}{c}{}\\[-0.2cm]
-  \textsc{January 2013} to& \textbf{Robot Programming Demonstrator} at \textsc{University of Birmingham}\\
-  \textsc{April 2013}&\footnotesize{Provided assistance to students with the implementation of various algorithms and the application of artificial intelligence techniques for use on LEGO NXT robots.}\\\multicolumn{2}{c}{}\\[-0.2cm]
-  \textsc{September 2012} to& \textbf{Foundation Year Computer Science Demonstrator} at \textsc{University of Birmingham}\\
-  \textsc{December 2012}&\footnotesize{Helped foundation year students understand basic programming concepts, and evaluated their performance in assignments.}\\\multicolumn{2}{c}{}\\[-0.2cm]
-  \textsc{September 2010} to& \textbf{Software Workshop (Java) Demonstrator} at \textsc{University of Birmingham}\\
-  \textsc{April 2011}&\footnotesize{One of five second year students selected to demonstrate for the First Year Workshop Java module. Provided advice on assignments, programming concepts, and the Java API.}\\
+\begin{tabular}{x{\datelen}|p{\descrlen}}
+  \textsc{Jun 2017} to& \textbf{Teaching Assistant} at \textsc{Vision for Robotics Group, Technische Universit{\"a}t Wien}\\
+  \textsc{Jan 2019}&\small{
+  \vspace{-0.4cm}
+  \begin{itemize}
+  \item Administered the Masters' \emph{Machine Vision and Cognitive Robotics} and Bachelors' \emph{Robotics and Computer Vision} courses.
+  \item Updated and maintained assignment content, managed tutors, graded assignments, and provided assistance to students.
+  \vspace{-1cm}
+  \end{itemize}}\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{Jan 2017} to& \textbf{Robot Programming Demonstrator} at \textsc{University of Birmingham}\\
+  \textsc{Apr 2017}&\small{
+  \vspace{-0.4cm}
+  \begin{itemize}
+  \item Discussed theoretical and software problems with students to help them understand the AI concepts being taught.
+  \item Helped students work together as teams to complete assignments, and graded them based on live demonstrations.
+  \vspace{-0.5cm}
+  \end{itemize}}
+  \begin{comment}
+  \\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{Jan 2013} to& \textbf{Robot Programming Demonstrator} at \textsc{University of Birmingham}\\
+  \textsc{Apr 2013}&\footnotesize{Provided assistance to students with the implementation of various algorithms and the application of artificial intelligence techniques for use on LEGO NXT robots.}\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{Sep 2012} to& \textbf{Foundation Year Computer Science Demonstrator} at \textsc{University of Birmingham}\\
+  \textsc{Dec 2012}&\footnotesize{Helped foundation year students understand basic programming concepts, and evaluated their performance in assignments.}\\\multicolumn{2}{c}{}\\[-0.2cm]
+  \textsc{Sep 2010} to& \textbf{Software Workshop (Java) Demonstrator} at \textsc{University of Birmingham}\\
+  \textsc{Apr 2011}&\footnotesize{One of five second year students selected to demonstrate for the First Year Workshop Java module. Provided advice on assignments, programming concepts, and the Java API.}\\
+  \end{comment}
 \end{tabular}
 
-\section{Volunteering}
-\begin{tabular}{x{2.8cm}|p{13cm}}
-  \textsc{April 2019} to& \textbf{Warehouse Volunteer} at \textsc{Fareshare London}\\
-  \textsc{Present} & \footnotesize{Sorted delivered food into categories and arranged in warehouse, picked required food for customer orders  }\\\multicolumn{2}{c}{} \\[-0.2cm]
+\section{Volunteering and Civil Society}
+\begin{tabular}{x{\datelen}|p{\descrlen}}
   \textsc{May 2019} to& \textbf{Assistant Observer} at \textsc{Democracy Volunteers}\\
-  \textsc{Present}&\footnotesize{Observed elections in the UK, Belgium and the Netherlands, completing surveys after visiting polling stations.}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \textsc{Present}&\small{
+  \vspace{-0.4cm}
+  \begin{itemize}
+  \item Accredited observer for local and general elections in the UK, Belgium, Netherlands, and USA. 
+  \item Attended polling stations on election day and recorded conformity with best practice for elections.
+  \vspace{-0.5cm}
+  \end{itemize}}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \textsc{May 2021}& \textbf{Presiding Officer} for \textsc{Oxford City Council Elections}\\
+  &\small{
+  \vspace{-0.4cm}
+  \begin{itemize}
+  \item Responsible for running a polling station on election day, including security of the ballot.
+  \item Collected ballot boxes, set up the station, provided ballots to voters, answered questions about voting process.
+    \vspace{-0.5cm}
+  \end{itemize}}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \textsc{Apr 2019} to& \textbf{Warehouse Volunteer} at \textsc{Fareshare London}\\
+  \textsc{Nov 2019} & \small{
+  \vspace{-0.4cm}
+  \begin{itemize}
+  \item Categorised and arranged incoming food in the warehouse, gathered food orders for distribution to charities.
+  \vspace{-0.5cm}
+  \end{itemize}}\\\multicolumn{2}{c}{} \\[-0.2cm]
 \end{tabular}
 
-\section{Bursaries, Scholarships and Awards}
-\begin{tabular}{x{2.8cm}|p{13cm}}
-  \multirow{2}{*}{\textsc{July 2013}} & \textbf{Computer Science Prize \& Research Committee Project Prize}\\
-                                      & \footnotesize{Awarded by the University of Birmingham School of Computer Science to the highest scoring final year student, and for the best research-related final dissertation.}\\\multicolumn{2}{c}{} \\[-0.2cm]
-  \textsc{January} to& \textbf{Japan Student Services Organisation Scholarship}\\
-  \textsc{April 2012}&\footnotesize{Short-term scholarship to support study in Japan.}\\\multicolumn{2}{c}{} \\[-0.2cm]
-  \textsc{July} to& \textbf{Nuffield Undergraduate Research Bursary}\\
-  \textsc{September 2011}&\footnotesize{Bursary to support a summer research project to investigate particle filter localisation for AUVs.}
+\section{Scholarships and Awards}
+\begin{tabular}{x{\datelen}|p{\descrlen}}
+  \textsc{Jul 2013} & \textbf{Computer Science Prize \& Research Committee Project Prize} at \textsc{University of Birmingham}\\
+                                      & \small{
+                                        \vspace{-0.4cm}
+  \begin{itemize}
+  \item School of Computer Science award for the top final year student, and best research project thesis.
+  \vspace{-0.5cm}
+  \end{itemize}}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \begin{comment}
+  \textsc{Jan} to& \textbf{Japan Student Services Organisation Scholarship}\\
+
+    \textsc{Apr 2012}&\footnotesize{Short-term scholarship to support study in Japan.}\\\multicolumn{2}{c}{} \\[-0.2cm]
+  \end{comment}
+  \textsc{Jul 2011}& \textbf{Nuffield Undergraduate Research Bursary} at \textsc{University of Birmingham}\\
+  &\small{
+  \vspace{-0.4cm}
+  \begin{itemize}
+  \item Bursary to support a summer research project to investigate particle filter localisation for AUVs.
+  \vspace{-0.5cm}
+  \end{itemize}}
 \end{tabular}
 
 \begin{minipage}[t]{0.47\textwidth}
   \section{Programming and Software}
-  Python, C++, ROS, git, Linux, \LaTeX
+  Python, C++, ROS, git, Linux, Qt, bash
   \vskip 0.2cm
-  \centering
   Public repositories at \href{http://www.github.com/heuristicus}{github.com/heuristicus}
 \end{minipage}
 \hskip 0.04\textwidth
@@ -173,14 +305,14 @@ Addresses and positions for referees are current. Bold text indicates
 where the person supervised me.
 \begin{center}
   \begin{tabular}{lll}
-    \textbf{University of Birmingham} & \textbf{Technische Universit{\"a}t Wien} & \textbf{Yujin Robot}\\
-    Nick Hawes& Markus Vincze & Daniel Stonier \\
-    Associate Professor of Robotics & Associate Professor & Program Manager --- Simulation\\
-    nickh@robots.ox.ac.uk & vincze@acin.tuwien.ac.at & d.stonier@gmail.com\\
-    Oxford Robotics Institute& Automation and Control Institute & Toyota Research Institute  \rule{0pt}{0.5cm} \\
-    23 Banbury Road, Felstead House& Technische Universit{\"a}t Wien & One Kendall Square  \\
-    Oxford & Gu{\ss}hausstrasse 27-29 & Building 100, Suite 1-201 \\
-    OX2 6NN, UK& 1040, Vienna, Austria & Cambridge, MA 02139, USA
+    \textbf{Oxford Robotics Institute} & \textbf{Oxford Robotics Institute} & \textbf{Oxford Robotics Institute}\\
+    Nick Hawes& Maurice Fallon & David Marquez-Gamez \\
+    Associate Professor in Engineering Science & Associate Professor in Engineering Science & Systems Team Lead\\
+    nickh@robots.ox.ac.uk & mfallon@robots.ox.ac.uk & davidmg@robots.ox.ac.uk\\
+    & Oxford Robotics Institute &  \rule{0pt}{0.5cm} \\
+    & University of Oxford &  \\
+    & 17 Parks Road, Oxford &  \\
+    & OX1 3PJ & 
   \end{tabular}
   
     % \begin{tabular}{lll}
